@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Harun Or Rashid Rasel — Full Stack Web Developer and CSE student at SUST." />
+  <meta name="theme-color" content="#f8fbff" />
+  <title>Harun Or Rashid Rasel | Full Stack Web Developer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    tailwind.config = {
+      theme: { extend: { colors: { brand: { 50:'#eff6ff', 100:'#dbeafe', 500:'#3b82f6', 600:'#2563eb', 700:'#1d4ed8', 900:'#172554' } } } }
+    };
+  </script>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+  <header class="fixed inset-x-0 top-0 z-50 border-b border-blue-100/80 bg-white/90 backdrop-blur-xl">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8" aria-label="Main navigation">
+      <a href="#home" class="brand-mark" aria-label="Harun Rasel home">Rasel<span>.</span></a>
+      <button id="menuButton" class="menu-button md:hidden" aria-label="Open navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <div id="navLinks" class="nav-links">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="#contact" class="nav-cta">Let's Talk <span>↗</span></a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero-section scroll-mt-24">
+      <div class="hero-grid"></div>
+      <div class="mx-auto grid max-w-7xl items-center gap-12 px-5 pb-20 pt-36 md:grid-cols-2 lg:px-8 lg:pb-28 lg:pt-44">
+        <div class="relative z-10 reveal">
+          <div class="eyebrow"><span class="status-dot"></span> AVAILABLE FOR LEARNING & COLLABORATION</div>
+          <p class="mt-7 text-sm font-bold uppercase tracking-[.22em] text-blue-600">Hello, I'm</p>
+          <h1 class="mt-3 font-display text-4xl font-extrabold leading-[1.12] tracking-tight text-slate-950 sm:text-5xl lg:text-6xl">
+            Harun Or Rashid <span class="gradient-text">Rasel</span>
+          </h1>
+          <h2 class="mt-5 text-xl font-bold text-slate-700 sm:text-2xl">Full Stack Web Developer</h2>
+          <p class="mt-5 max-w-xl text-base leading-8 text-slate-600">
+            Aspiring Software Engineer <span class="text-blue-500">|</span> Full Stack Developer
+            <span class="text-blue-500">|</span> Tech Enthusiast
+          </p>
+          <p class="mt-4 max-w-xl leading-8 text-slate-600">
+            I enjoy solving problems, exploring modern web technologies, and turning ideas into useful digital experiences.
+          </p>
+          <div class="mt-9 flex flex-wrap gap-3">
+            <a class="button-primary" href="#projects">View Projects <span>↗</span></a>
+            <a class="button-secondary" href="#contact">Contact Me</a>
+          </div>
+          <div class="mt-10 flex flex-wrap items-center gap-5 text-sm text-slate-500">
+            <span class="inline-flex items-center gap-2"><span class="pin-icon">⌖</span> Sylhet, Bangladesh</span>
+            <span class="hidden h-1 w-1 rounded-full bg-blue-300 sm:block"></span>
+            <a class="social-text" href="mailto:harunorrashid289@gmail.com">harunorrashid289@gmail.com</a>
+          </div>
+        </div>
+        <div class="relative mx-auto w-full max-w-md reveal">
+          <div class="portrait-glow"></div>
+          <div class="portrait-frame">
+            <img src="assets/profile.jpg" alt="Portrait of Harun Or Rashid Rasel" class="portrait-image" />
+          </div>
+          <div class="floating-card floating-card-top"><span class="float-icon">⌘</span><div><strong>Problem Solver</strong><small>Always learning</small></div></div>
+          <div class="floating-card floating-card-bottom"><span class="float-icon blue-icon">{"</>"}</span><div><strong>Developer</strong><small>Building with purpose</small></div></div>
+          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        </div>
+      </div>
+      <div class="mx-auto max-w-7xl px-5 pb-8 lg:px-8">
+        <div class="hero-stats">
+          <div><strong>07+</strong><span>Projects listed</span></div>
+          <div><strong>17+</strong><span>Technologies & tools</span></div>
+          <div><strong>CSE</strong><span>SUST student</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section-wrap scroll-mt-24">
+      <div class="mx-auto grid max-w-7xl gap-12 px-5 py-24 lg:grid-cols-[.8fr_1.2fr] lg:px-8">
+        <div class="reveal">
+          <p class="section-kicker">GET TO KNOW ME</p>
+          <h2 class="section-title">A little about <span class="gradient-text">myself.</span></h2>
+          <div class="about-note mt-8">
+            <span class="quote-mark">“</span>
+            <p>Curiosity drives me to learn, build, and improve a little every day.</p>
+          </div>
+        </div>
+        <div class="reveal">
+          <p class="text-lg leading-9 text-slate-600">
+            I am a passionate Computer Science and Engineering student at Shahjalal University of Science and Technology (SUST), with a strong interest in software development and modern web technologies. I enjoy solving problems, learning new technologies, and building innovative digital solutions. My goal is to become a skilled software engineer and create impactful applications.
+          </p>
+          <p class="mt-5 leading-8 text-slate-600">
+            I am currently pursuing a B.Sc. in Computer Science & Engineering. Alongside my academic journey, I explore frontend and backend development, databases, and programming fundamentals through hands-on projects.
+          </p>
+          <div class="mt-8 grid gap-4 sm:grid-cols-2">
+            <div class="info-tile"><span class="tile-icon">⌂</span><div><small>Based in</small><strong>Sylhet, Bangladesh</strong></div></div>
+            <div class="info-tile"><span class="tile-icon">✦</span><div><small>Career goal</small><strong>Software Engineer</strong></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="bg-white scroll-mt-24">
+      <div class="mx-auto max-w-7xl px-5 py-24 lg:px-8">
+        <div class="section-heading reveal"><p class="section-kicker">WHAT I WORK WITH</p><h2 class="section-title">Technical <span class="gradient-text">Skills</span></h2><p class="section-subtitle">Technologies and tools I have explored and used in my learning journey.</p></div>
+        <div class="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          <article class="skill-card reveal"><div class="skill-icon">⌘</div><h3>Frontend Development</h3><div class="skill-tags"><span>HTML</span><span>CSS</span><span>Tailwind CSS</span><span>JavaScript</span><span>React.js</span><span>Next.js</span></div></article>
+          <article class="skill-card reveal"><div class="skill-icon">⌁</div><h3>Backend Development</h3><div class="skill-tags"><span>Node.js</span><span>Express.js</span><span>Python</span><span>Go</span><span>REST API</span></div></article>
+          <article class="skill-card reveal"><div class="skill-icon">▤</div><h3>Database</h3><div class="skill-tags"><span>MongoDB</span><span>PostgreSQL</span><span>MySQL</span></div></article>
+          <article class="skill-card reveal"><div class="skill-icon">⌨</div><h3>Programming Languages</h3><div class="skill-tags"><span>Java</span><span>C</span><span>C++</span><span>Python</span><span>JavaScript</span><span>Go</span></div></article>
+          <article class="skill-card reveal"><div class="skill-icon">⌘</div><h3>Tools</h3><div class="skill-tags"><span>Git</span><span>GitHub</span><span>VS Code</span></div></article>
+          <article class="skill-card skill-level-card reveal"><div class="skill-icon">↗</div><h3>Current level</h3><p>Intermediate</p><small>Focused on consistent practice and building real projects.</small></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section-wrap scroll-mt-24">
+      <div class="mx-auto max-w-7xl px-5 py-24 lg:px-8">
+        <div class="section-heading reveal"><p class="section-kicker">SOME THINGS I'VE BUILT</p><h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2><p class="section-subtitle">A selection of academic and personal projects. These projects are currently in progress.</p></div>
+        <div class="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <article class="project-card reveal"><div class="project-art art-blue"><span class="art-symbol">↗</span><span class="art-label">GO · WEB</span><div class="browser-mini"><i></i><i></i><i></i><b>short.link/abc</b></div></div><div class="project-body"><div class="flex items-center justify-between gap-3"><h3>URL Shortener</h3><span class="project-status">In Progress</span></div><p>A Go-based URL shortener that converts long URLs into short links and redirects visitors to the original destination.</p><div class="project-tech"><span>Go</span><span>HTTP</span></div><a class="project-link" href="https://github.com/rasel075/URL-Shortener" target="_blank" rel="noopener">Source Code <span>↗</span></a></div></article>
+          <article class="project-card reveal"><div class="project-art art-violet"><span class="art-symbol">▤</span><span class="art-label">JAVA · DESKTOP</span><div class="book-stack"><i></i><i></i><i></i></div></div><div class="project-body"><div class="flex items-center justify-between gap-3"><h3>Book Management</h3><span class="project-status">In Progress</span></div><p>A Java project focused on managing book-related records and practicing object-oriented programming.</p><div class="project-tech"><span>Java</span><span>OOP</span></div><a class="project-link" href="https://github.com/rasel075/BookManagement_Java" target="_blank" rel="noopener">Source Code <span>↗</span></a></div></article>
+          <article class="project-card reveal"><div class="project-art art-cyan"><span class="art-symbol">✂</span><span class="art-label">JAVA · GAME</span><div class="rps-icons"><b>✊</b><b>✋</b><b>✌</b></div></div><div class="project-body"><div class="flex items-center justify-between gap-3"><h3>Rock Paper Scissors</h3><span class="project-status">In Progress</span></div><p>A console-based Java game where a player chooses rock, paper, or scissors to play against the computer.</p><div class="project-tech"><span>Java</span><span>Random</span></div><a class="project-link" href="https://github.com/rasel075/java_project/blob/main/RockPaperScissor.java" target="_blank" rel="noopener">View Source <span>↗</span></a></div></article>
+          <article class="project-card reveal"><div class="project-art art-indigo"><span class="art-symbol">✦</span><span class="art-label">AI · EDUCATION</span><div class="edu-art">Edu<span>Connect</span></div></div><div class="project-body"><div class="flex items-center justify-between gap-3"><h3>EduConnect</h3><span class="project-status">In Progress</span></div><p>A student-focused platform concept with AI integration, developed as a learning project.</p><div class="project-tech"><span>Flask</span><span>DeepSeek API</span><span>Supabase</span><span>Socket.IO</span></div><span class="project-link muted-link">Repository link not provided</span></div></article>
+          <article class="project-card reveal"><div class="project-art art-rose"><span class="art-symbol">⌬</span><span class="art-label">ML · RESEARCH</span><div class="gene-art">Gene<span>DB</span></div></div><div class="project-body"><div class="flex items-center justify-between gap-3"><h3>GeneDB</h3><span class="project-status">In Progress</span></div><p>An ML-driven project exploring genetic disorder risk prediction.</p><div class="project-tech"><span>Machine Learning</span><span>Database</span></div><span class="project-link muted-link">Repository link not provided</span></div></article>
+          <article class="project-card reveal"><div class="project-art art-orange"><span class="art-symbol">▣</span><span class="art-label">BACKEND</span><div class="cart-art">SMART <b>CART</b></div></div><div class="project-body"><div class="flex items-center justify-between gap-3"><h3>Smart Cart Backend</h3><span class="project-status">In Progress</span></div><p>A backend-focused project exploring server-side development for a smart cart application.</p><div class="project-tech"><span>Backend</span><span>API</span></div><span class="project-link muted-link">Repository link not provided</span></div></article>
+          <article class="project-card reveal"><div class="project-art art-green"><span class="art-symbol">⌗</span><span class="art-label">JAVA · PRACTICE</span><div class="number-art">Guess <b>?</b></div></div><div class="project-body"><div class="flex items-center justify-between gap-3"><h3>Number Guess</h3><span class="project-status">In Progress</span></div><p>A small number-guessing project for practicing programming logic and user interaction.</p><div class="project-tech"><span>Java</span><span>Logic</span></div><a class="project-link" href="https://github.com/rasel075/Web-Tech/blob/main/numberguess.java" target="_blank" rel="noopener">View Source <span>↗</span></a></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="bg-white scroll-mt-24">
+      <div class="mx-auto max-w-7xl px-5 py-24 lg:px-8">
+        <div class="section-heading reveal"><p class="section-kicker">MY LEARNING JOURNEY</p><h2 class="section-title">Education & <span class="gradient-text">Background</span></h2></div>
+        <div class="timeline mt-14">
+          <article class="timeline-item reveal"><span class="timeline-dot"></span><div class="timeline-card"><span class="timeline-date">2021–Present · Session 2021–22</span><h3>B.Sc. in Computer Science & Engineering</h3><p class="timeline-place">Shahjalal University of Science and Technology (SUST)</p><p>Currently studying in the Department of Computer Science & Engineering.</p></div></article>
+          <article class="timeline-item reveal"><span class="timeline-dot"></span><div class="timeline-card"><span class="timeline-date">Previous Education</span><h3>Higher Secondary Education</h3><p class="timeline-place">Raipura Govt. College</p></div></article>
+          <article class="timeline-item reveal"><span class="timeline-dot"></span><div class="timeline-card"><span class="timeline-date">Previous Education</span><h3>Secondary Education</h3><p class="timeline-place">Uttar BakharNagar Union High School</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section-wrap scroll-mt-24">
+      <div class="mx-auto max-w-7xl px-5 py-24 lg:px-8">
+        <div class="section-heading reveal"><p class="section-kicker">LET'S CONNECT</p><h2 class="section-title">Have a project in <span class="gradient-text">mind?</span></h2><p class="section-subtitle">Feel free to reach out for collaboration, opportunities, or a friendly conversation.</p></div>
+        <div class="mt-14 grid gap-10 lg:grid-cols-[.8fr_1.2fr]">
+          <div class="contact-panel reveal">
+            <h3>Contact information</h3><p class="mt-3 leading-7 text-blue-100/80">You can contact me through email or connect with me on social platforms.</p>
+            <a class="contact-detail" href="mailto:harunorrashid289@gmail.com"><span>✉</span><div><small>Email</small><strong>harunorrashid289@gmail.com</strong></div></a>
+            <div class="contact-detail"><span>⌖</span><div><small>Location</small><strong>Sylhet, Bangladesh</strong></div></div>
+            <div class="social-links" aria-label="Social media profiles">
+              <a href="https://github.com/rasel075" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 .9a11.1 11.1 0 0 0-3.51 21.63c.56.1.76-.24.76-.54v-2.08c-3.1.67-3.76-1.32-3.76-1.32-.5-1.28-1.23-1.62-1.23-1.62-1.01-.69.08-.68.08-.68 1.12.08 1.71 1.15 1.71 1.15.99 1.7 2.6 1.21 3.23.93.1-.72.39-1.21.71-1.49-2.48-.28-5.09-1.24-5.09-5.52 0-1.22.44-2.21 1.15-2.99-.12-.28-.5-1.42.11-2.95 0 0 .94-.3 3.05 1.14a10.6 10.6 0 0 1 5.55 0c2.11-1.44 3.05-1.14 3.05-1.14.61 1.53.23 2.67.11 2.95.72.78 1.15 1.77 1.15 2.99 0 4.29-2.61 5.23-5.1 5.51.4.35.76 1.03.76 2.08v3.09c0 .3.2.65.77.54A11.1 11.1 0 0 0 12 .9Z"/></svg>
+              </a>
+              <a href="https://www.linkedin.com/in/mohammad-rasel-97501a3a4/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.13 1.44-2.13 2.94v5.67H9.35V8.98h3.42v1.57h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.26 2.37 4.26 5.46v6.29ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V8.98h3.56v11.47ZM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.44c.98 0 1.79-.77 1.79-1.72V1.72C24 .77 23.2 0 22.22 0Z"/></svg>
+              </a>
+              <a href="https://www.facebook.com/mohammad.rasel2021" target="_blank" rel="noopener noreferrer" aria-label="Facebook" title="Facebook">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.05V9.4c0-3.03 1.79-4.71 4.53-4.71 1.31 0 2.68.24 2.68.24v2.96h-1.51c-1.49 0-1.95.93-1.95 1.88v2.3h3.32l-.53 3.49h-2.79V24C19.61 23.1 24 18.1 24 12.07Z"/></svg>
+              </a>
+              <a href="https://www.instagram.com/mohammad.rasel2021/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M7.8 2h8.4A5.8 5.8 0 0 1 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8A5.8 5.8 0 0 1 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2Zm0 2A3.8 3.8 0 0 0 4 7.8v8.4A3.8 3.8 0 0 0 7.8 20h8.4a3.8 3.8 0 0 0 3.8-3.8V7.8A3.8 3.8 0 0 0 16.2 4H7.8ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm5.25-3.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5Z"/></svg>
+              </a>
+            </div>
+          </div>
+          <form id="contactForm" class="contact-form reveal" onsubmit="return false;">
+            <div class="grid gap-5 sm:grid-cols-2">
+              <label>Your Name<input type="text" name="name" placeholder="Enter your name" required minlength="2" /></label>
+              <label>Your Email<input type="email" name="email" placeholder="Enter your email" required /></label>
+            </div>
+            <label class="mt-5 block">Subject<input type="text" name="_subject" placeholder="What is this about?" required /></label>
+            <label class="mt-5 block">Message<textarea name="message" rows="5" placeholder="Write your message..." required minlength="10"></textarea></label>
+            <input type="text" name="_honey" class="hidden" tabindex="-1" autocomplete="off" />
+            <button class="button-primary mt-6 w-full justify-center sm:w-auto" type="button" id="submitButton">Send Message <span>↗</span></button>
+            <p class="mt-4 text-sm text-slate-500">Contact form preview — design only. Please email me directly to get in touch.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="mx-auto flex max-w-7xl flex-col gap-5 px-5 py-8 sm:flex-row sm:items-center sm:justify-between lg:px-8">
+      <a href="#home" class="brand-mark footer-brand">Rasel<span>.</span></a>
+      <p>© <span id="year"></span> Harun Or Rashid Rasel. All rights reserved.</p>
+      <div class="footer-nav"><a href="#home">Home</a><a href="#about">About</a><a href="#projects">Projects</a><a href="#contact">Contact</a></div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
